@@ -2,6 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    "python",
     "vim",
     "lua",
     "html",
@@ -23,6 +24,12 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
+    --python stuff
+    "black",
+    "pyright",
+    "mypy",
+    "ruff",
+
     -- lua stuff
     "lua-language-server",
     "stylua",

@@ -7,6 +7,10 @@ end
 local b = null_ls.builtins
 
 local sources = {
+  --python
+  b.diagnostics.mypy,
+  b.diagnostics.ruff,
+  b.formatting.black,
 
   -- webdev stuff
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
