@@ -8,11 +8,19 @@ M.general = {
 }
 
 -- more keybinds!
-M.custom = {
-  v = {
-    ["<C-J>"] = {":m '>+1<CR>gv=gv", "move current line down"},
-    ["<C-K>"] = {":m '<-2<CR>gv=gv", "move current line up"},
-  }
-}
+-- M.custom = {
+-- n = {
+-- ["<C-K>"] = {":m '<-2<CR>gv=gv", "move current line up"},
+-- ["<C-J>"] = {":m '>+1<CR>gv=gv", "move current line down"},
+-- }
+-- }
+
+-- M.custom = {
+--   i = {
+--     ["<S-tab>"] = { 'copilot#Accept("<CR>")', silent = true, expr = true },
+--     ["<C-]>"] = { "copilot#Next()", silent = true, expr = true },
+--     ["<C-[>"] = { "copilot#Previous()", silent = true, expr = true },
+--   },
+-- }
 
 return M

@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -46,6 +46,25 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+  -- Github Copilot
+  {
+    "zbirenbaum/copilot.lua",
+    -- Lazy load when event occurs. Events are triggered
+    -- as mentioned in:
+    -- https://vi.stackexchange.com/a/4495/20389
+    event = "InsertEnter",
+    -- You can also have it load at immediately at
+    -- startup by commenting above and uncommenting below:
+    lazy = false,
+    opts = overrides.copilot,
+  },
+
+  -- Images
+  -- {
+  --   "edluffy/hologram.nvim",
+  --   opts = overrides.hologram,
+  -- },
 
   -- To make a plugin not be loaded
   -- {
