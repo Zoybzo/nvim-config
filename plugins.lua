@@ -60,6 +60,12 @@ local plugins = {
     opts = overrides.copilot,
   },
 
+  -- -- Jupyter
+  -- {
+  --   "dccsillag/magma-nvim",
+  --   opts = overrides.magma,
+  -- },
+
   -- Images
   -- {
   --   "edluffy/hologram.nvim",
