@@ -60,16 +60,13 @@ local plugins = {
     opts = overrides.copilot,
   },
 
-  -- -- Jupyter
+  -- -- Codeforce
   -- {
-  --   "dccsillag/magma-nvim",
-  --   opts = overrides.magma,
-  -- },
-
-  -- Images
-  -- {
-  --   "edluffy/hologram.nvim",
-  --   opts = overrides.hologram,
+  --   "xeluxee/competitest.nvim",
+  --   dependencies = "MunifTanjim/nui.nvim",
+  --   config = function()
+  --     require("competitest").setup()
+  --   end,
   -- },
 
   -- To make a plugin not be loaded
