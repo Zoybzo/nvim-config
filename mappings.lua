@@ -7,6 +7,17 @@ M.general = {
   },
 }
 
+-- M.ufo = {
+--   n = {
+--     ["zR"] = { ":UfoOpenAll<CR>", "open all folds" },
+--     ["zM"] = { ":UfoCloseAll<CR>", "close all folds" },
+--     ["zr"] = { ":UfoOpen<CR>", "open fold under cursor" },
+--     ["zm"] = { ":UfoClose<CR>", "close fold under cursor" },
+--     ["zj"] = { ":UfoOpenAll<CR>", "open all folds" },
+--     ["zk"] = { ":UfoCloseAll<CR>", "close all folds" },
+--   },
+-- }
+
 -- more keybinds!
 -- M.custom = {
 -- n = {

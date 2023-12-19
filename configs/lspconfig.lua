@@ -13,5 +13,20 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- Setup required for ufo
+-- capabilities.textDocument.foldingRange = {
+--   dynamicRegistration = false,
+--   lineFoldingOnly = true,
+-- }
+
 --
 -- lspconfig.pyright.setup { blabla}
+local cmp_nvim_lsp = require "cmp_nvim_lsp"
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+  capabilities = cmp_nvim_lsp.default_capabilities(),
+  cmd = {
+    "clangd",
+    "--offset_encoding=utf-16",
+  },
+}
