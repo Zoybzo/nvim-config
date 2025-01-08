@@ -7,6 +7,15 @@ M.general = {
   },
 }
 
+M.copilot = {
+  n = {
+    -- 启用 Copilot
+    ["<leader>ce"] = { ":Copilot enable<CR>", "Enable Copilot" },
+    -- 禁用 Copilot
+    ["<leader>cd"] = { ":Copilot disable<CR>", "Disable Copilot" },
+  },
+}
+
 -- M.ufo = {
 --   n = {
 --     ["zR"] = { ":UfoOpenAll<CR>", "open all folds" },

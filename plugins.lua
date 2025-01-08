@@ -53,7 +53,7 @@ local plugins = {
     -- Lazy load when event occurs. Events are triggered
     -- as mentioned in:
     -- https://vi.stackexchange.com/a/4495/20389
-    event = "InsertEnter",
+    -- event = "InsertEnter",
     -- You can also have it load at immediately at
     -- startup by commenting above and uncommenting below:
     lazy = false,
@@ -70,6 +70,23 @@ local plugins = {
     lazy = false,
     opts = overrides.todo,
   },
+
+  -- Trouble
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    lazy = false,
+    opts = overrides.trouble,
+  },
+
+  -- {
+  --   "L3MON4D3/LuaSnip",
+  --   -- follow latest release.
+  --   version = "v2.3", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+  --   -- install jsregexp (optional!).
+  --   lazy = false,
+  --   build = "make install_jsregexp",
+  -- },
 
   -- Ufo
   -- {
